@@ -1,0 +1,7 @@
+name: Bring Back Frankie!
+markdown: kramdown
+description: A call to action!
+url: http://www.bringbackfrankie.com
+
+gems:
+  - jekyll-seo-tag
