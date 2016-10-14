@@ -1,7 +1,7 @@
 name: Bring Back Frankie!
 markdown: kramdown
 description: What you can do to help get Frankie Boyle back on Mock the Week.
-url: http://www.bringbackfrankie.com
+url: http://bringbackfrankie.com
 
 gems:
   - jekyll-seo-tag
