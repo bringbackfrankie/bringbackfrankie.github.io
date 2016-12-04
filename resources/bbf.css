@@ -1,1 +1,183 @@
-a,abbr,acronym,address,applet,article,aside,audio,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}body,html{height:100%}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background-color:#363741;color:#fff;font-family:Walter Turncoat,cursive}#contentContainer{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;padding:0 3%}img{max-width:100%}a{text-decoration:none;outline:0;color:inherit!important}a:visited{color:inherit}#jsmsg a,li,p{line-height:1.33;font-size:1.125rem}h1{font-size:1.5rem;margin:.5rem .25rem;text-align:center;font-weight:700}hr{max-width:800px}#jsmsg{text-align:center}#jsmsg p{background-color:#f6653c;font-weight:700}#jsmsg a{text-decoration:underline}p{padding:.75rem 0}#clickButton,p{text-align:center}#clickButton{background-color:#76788d;-webkit-transition:.5s;transition:.5s;max-width:450px;margin:0 auto}#clickButton a{font-size:1.5rem;display:block;padding:1.25rem}#clickButton.active,#clickButton:hover{background-color:#f6653c}#steps{display:none;margin:.75rem auto;background-color:#76788d;padding:.5rem;max-width:800px}img{margin:.75rem 0}footer{text-align:center;margin:0 auto}footer p{display:block;color:#fff}@media screen and (min-width:600px){h1{padding-top:.8rem;font-size:2.75rem}p{font-size:1.25rem}#clickButton a{padding:1.5rem}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+ center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+html, body {
+	height: 100%;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***-Overall-***/
+
+/*Display body as flex, keep footer at bottom*/
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #363741;
+  color: #fff;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+#contentContainer {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0 3%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:visited {
+  color: inherit;
+}
+
+p, li, #jsmsg {
+  line-height: 1.33;
+  font-size: 1.125rem;
+}
+
+/***-Header-***/
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0.25rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+hr {
+  max-width: 800px;
+}
+
+#jsmsg {
+  text-align: center;
+}
+
+#jsmsg p {
+  background-color: #f6653c;
+  font-weight: bold;
+}
+
+#jsmsg a {
+  text-decoration: underline;
+}
+
+/***-Main-***/
+
+p {
+  padding: 0.75rem 0;
+  text-align: center;
+}
+
+#clickButton {
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+button {
+  width: 100%;
+  -webkit-transition:.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #76788d;
+  display: block;
+  font-size: 1.5rem;
+  display: block;
+  padding: 1rem;
+  border: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+button:hover,
+button.active {
+  background-color: #f6653c;
+}
+
+#steps {
+  display: none;
+  margin: 0.75rem auto;
+  background-color: #76788d;
+  padding: 0.5rem;
+  max-width: 800px;
+}
+
+img {
+  margin: 0.75rem 0;
+}
+
+
+/***-Footer-***/
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer p {
+  display: block;
+  color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    padding-top: 0.8rem;
+    font-size: 2.75rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  button {
+    padding: 1rem;
+  }
+}
