@@ -2,9 +2,9 @@
 layout: default
 ---
 <hr>
-Those left-wing PC whingers at the BBC still won't bring Frankie Boyle back to Mock the Week.
+Those left-wing whingers at the BBC still won't bring Frankie Boyle back to Mock the Week.
 
-<div id="clickButton"><a href="#">Click here to see what you can do...</a></div>
+<div id="clickButton"><button>Click here to see what you can do...</button></div>
 <div id="steps">
   <ul>
     <li><b>Step 1:</b> Shut up and get the fuck over it. No seriously, it's been six years.</li>
